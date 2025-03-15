@@ -1,4 +1,5 @@
 import '../../shared/globals.css';
+import { Header } from './Components/Header';
 
 export default function PageLayout({
   children,
@@ -6,8 +7,9 @@ export default function PageLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body>
+        <Header />
         {children}
       </body>
     </html>
